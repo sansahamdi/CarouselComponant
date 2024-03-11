@@ -1,0 +1,64 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	border: 1px solid #000;
+	justify-content: center;
+}
+
+.cards-container {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.cards-container::-webkit-scrollbar {
+	display: none;
+}
+
+.slide {
+	scroll-snap-align: start;
+}
+
+.card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	margin: 20px;
+}
+
+.card-content {
+	padding: 20px;
+}
+
+.card-title {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.card-description {
+	font-size: 1rem;
+	color: #666;
+}
+
+.prev-button,
+.next-button {
+	background-color: #203442;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+	background-color: #407bff21;
+	border-color: blue;
+	color: blue;
+}
